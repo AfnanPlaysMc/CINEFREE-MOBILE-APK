@@ -1,0 +1,49 @@
+{
+  "collections": [
+    {
+      "path": "users/{userId}",
+      "description": "User profiles and account settings",
+      "fields": {
+        "userId": "string",
+        "displayName": "string",
+        "email": "string",
+        "role": "string",
+        "photoUrl": "string?",
+        "createdAt": "timestamp"
+      }
+    },
+    {
+      "path": "users/{userId}/watchlist",
+      "description": "User's saved movies and TV shows",
+      "fields": {
+        "movieId": "string",
+        "title": "string",
+        "posterPath": "string?",
+        "mediaType": "string",
+        "addedAt": "timestamp"
+      }
+    },
+    {
+      "path": "reviews/{reviewId}",
+      "description": "Public movie reviews and ratings",
+      "fields": {
+        "movieId": "string",
+        "userId": "string",
+        "userName": "string",
+        "rating": "number",
+        "comment": "string",
+        "createdAt": "timestamp"
+      }
+    },
+    {
+      "path": "overrides/{movieId}",
+      "description": "Admin overrides for movie details or custom stream links",
+      "fields": {
+        "movieId": "string",
+        "customStreamUrl": "string?",
+        "featured": "boolean",
+        "updatedAt": "timestamp"
+      }
+    }
+  ]
+}
