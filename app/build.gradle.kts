@@ -10,14 +10,14 @@ plugins {
 
 android {
   namespace = "com.aistudio.cinefree.ovqptw"
-  compileSdk { version = release(36) { minorApiLevel = 1 } }
+  compileSdk = 36
 
   defaultConfig {
-    applicationId = "com.aistudio.cinefree.ovqptw"
+    applicationId = "com.oxastudios.cinefree"
     minSdk = 24
-    targetSdk = 36
-    versionCode = 1
-    versionName = "1.0"
+    targetSdk = 34
+    versionCode = 2
+    versionName = "2.0"
 
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
   }
